@@ -12,7 +12,7 @@ if(!isset($_SESSION['user']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Books">
-    <meta name="author" content="Shivangi Gupta">
+    <meta name="author" content="Aman Kumar Sharma">
     <title>Online Bookstore</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@ if(!isset($_SESSION['user']))
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php"><img alt="Brand" src="img/logo.jpg" style="width: 118px;margin-top: -7px;margin-left: -10px;"></a>
+          <a class="navbar-brand" href="index.php"><img alt="Brand" src="img/logo-removebg-preview.png" style="width: 147px;margin-top: -14px;margin-left: -14px;"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
