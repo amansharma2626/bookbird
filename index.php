@@ -82,24 +82,109 @@ if(isset($_POST['submit']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Books">
-    <meta name="author" content="Aman Sharma">
+    <meta name="author" content="Aman Kumar Sharma">
     <title>Online Bookstore</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/my.css" rel="stylesheet">
     <style>
-      .modal-header {background:#D67B22;color:#ffffff;font-weight:800;}
+      .modal-header {background:#ffffff;color:#ffffff;font-weight:800;}
       .modal-body{font-weight:800;}
       .modal-body ul{list-style:none;}
       .modal .btn {background:#D67B22;color:#ffffff;}
       .modal a{color:#D67B22;}
-      .modal-backdrop {position:inherit !important;}
+      .modal-backdrop {position:inherit !important}
        #login_button,#register_button{background:none;color:#ffffff!important;}       
        #query_button {position:fixed;right:0px;bottom:0px;padding:10px 80px;
                       background-color:#D67B22;color:#ffffff;border-color:#f05f40;border-radius:2px;}
   	@media(max-width:767px){
         #query_button {padding: 5px 20px;}
-  	}
+      }
+
+
+
+      .modal-content {
+            position: absolute;
+            left: 50%;
+            top: 300px;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            width: 400px;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, .5);
+
+        }
+        .modal-content .form-group{
+            margin-top: 20px;
+        }
+
+        h4 {
+            text-align: center;
+            /* margin: 0 0 30px; */
+            padding: 0px;
+            color: deepskyblue;
+        }
+
+        .modal .form-control {
+            position: relative;
+        }
+
+        .modal input{
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: black;
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+        }
+
+        .modal-content .modal-body label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: white;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .modal .modal-body input:focus~label,
+        .modal .modal-body input:valid~label {
+            top: -20px;
+            left: 0px;
+            color: deepskyblue;
+            font-size: 12px;
+        }
+
+        .modal .btn {
+            margin-top: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            background: deepskyblue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+      
+
+
+
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -113,7 +198,7 @@ if(isset($_POST['submit']))
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="padding: 1px;"><img class="img-responsive" alt="Brand" src="img/logo-removebg.png"  style="width: 147px;margin: 0px;"></a>
+          <a class="navbar-brand" href="#" style="padding: 1px;"><img class="img-responsive" alt="Brand" src="img/logo-removebg-preview.png"  style="width: 147px;margin: 0px;"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -125,22 +210,23 @@ if(isset($_POST['submit']))
             echo'
             <li>
                 <button type="button" id="login_button" class="btn btn-lg" data-toggle="modal" data-target="#login">Login</button>
-                  <div id="login" class="modal fade" role="dialog">
+                  <div id="login" class="modal fade" role="dialog" >
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title text-center">Login Form</h4>
-                            </div>
+                            
                             <div class="modal-body">
                                           <form class="form" role="form" method="post" action="index.php" accept-charset="UTF-8">
                                               <div class="form-group">
-                                                  <label class="sr-only" for="username">Username</label>
+                                                  
                                                   <input type="text" name="login_username" class="form-control" placeholder="Username" required>
+                                                  <label class="sr-only" for="username">Username</label>
                                               </div>
                                               <div class="form-group">
-                                                  <label class="sr-only" for="password">Password</label>
+                                                  
                                                   <input type="password" name="login_password" class="form-control"  placeholder="Password" required>
+                                                  <label class="sr-only" for="password">Password</label>
                                               </div>
                                               <div class="form-group">
                                                   <button type="submit" name="submit" value="login" class="btn btn-block">
