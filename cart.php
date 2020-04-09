@@ -37,7 +37,7 @@
     <meta name="description" content="Cart">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="author" content="Shivangi Gupta">
+    <meta name="author" content="Aman kumar sharma">
     <title>order</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -61,7 +61,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
          	 </button>
-          	<a class="navbar-brand" href="index.php" style="padding: 1px;"><img class="img-responsive" alt="Brand" src="img/logo.jpg"  style="width: 147px;margin: 0px;"></a>
+          	<a class="navbar-brand" href="index.php" style="padding: 1px;"><img class="img-responsive" alt="Brand" src="img/logo-removebg-preview.png"  style="width: 147px;margin: 0px;"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
